@@ -13,7 +13,7 @@ import { RiUserSettingsLine } from 'react-icons/ri';
 import { VscServerProcess } from 'react-icons/vsc';
 import { month_name } from '../../../fake_data/all_fakedata';
 import Action from '../../../utilities/Action';
-import ActionToUser from '../../../utilities/ActionToUSer';
+import ActionToUser from '../../../utilities/ActionToUser';
 
 // table row sorter here
 const userSort = (rowA, rowB) => {
