@@ -3,7 +3,7 @@
  */
 
 import Order from '../../../models/AllOrders';
-import db from '../../../models/db';
+import db from '../../utilities/database';
 
 export const allOrders = async (req, res) => {
 	await db.connect();
