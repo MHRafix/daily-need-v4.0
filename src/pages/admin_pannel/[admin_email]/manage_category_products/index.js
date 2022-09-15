@@ -63,7 +63,7 @@ export async function getStaticProps({ params }) {
 	const all_products = await fetcher('client_pannel_api/all_products');
 
 	// all categories
-	const all_categories = await fetcher('client_pannel_api/allcategories');
+	const all_categories = await fetcher('client_pannel_api/all_categories');
 
 	return {
 		props: { all_products, all_categories, this_user },

@@ -36,7 +36,7 @@ export default function MyAllOrders({ my_orders, loggedin_user }) {
 				title='Manage orders'
 				description="This is my all orders page of 'Daily Needs Grocery' web application."
 			>
-				<MyAllOrdersMain my_orders={my_orders} />
+				<MyAllOrdersMain my_orders={my_orders.length ? my_orders : []} />
 			</LayoutContainer>
 		</>
 	);
@@ -63,18 +63,7 @@ export async function getStaticProps({ params }) {
 		`user_dashboard_api/manage_users/single_user/${user_email}`
 	);
 
-	// user orders
-	// const orders = await fetch(
-	// 	'https:daily-need.vercel.app/api/client_pannel_api/manage_orders/all_orders'
-	// );
-	// const all_orders = await orders.json();
-
-	// // find my orders
-	// const my_orders = all_orders.filter(
-	// 	(order) => order.user_email === user_email
-	// );
-
-	const my_orders = await fetch(
+	const my_orders = await fetcher(
 		`client_pannel_api/manage_orders/my_orders/${user_email}`
 	);
 
