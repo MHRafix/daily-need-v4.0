@@ -1,0 +1,348 @@
+line.recharts-cartesian-axis-line {
+	display: none !important;
+}
+
+text.recharts-text.recharts-cartesian-axis-tick-value {
+	display: grid !important;
+	margin: 10px !important;
+	font-size: 12px !important;
+}
+
+.recharts-tooltip-wrapper.recharts-tooltip-wrapper-right.recharts-tooltip-wrapper-top {
+	display: block !important;
+}
+
+ul.recharts-tooltip-item-list {
+	display: block !important;
+	width: 130px !important;
+}
+
+p.recharts-tooltip-label {
+	display: block !important;
+}
+
+li.recharts-tooltip-item {
+	text-align: left !important;
+}
+
+.recharts-default-tooltip {
+	display: block;
+	padding: 15px 25px !important;
+	background-color: rgb(255, 255, 255) !important;
+	border: none !important;
+	border-radius: 10px !important;
+	box-shadow: 0px 0px 6px 1px #6f767296;
+}
+
+/* react table css here */
+input.sorting_input {
+	font-size: 12px;
+	color: #626060d1;
+	letter-spacing: 1px;
+	border: 1px solid #e1e1e1d1;
+	padding: 7px 10px;
+	border-radius: 2px;
+	font-weight: 500;
+	outline: none;
+}
+
+table {
+	width: 100%;
+}
+
+/* table#products_table {
+  width: 950px;
+  overflow: scroll;
+} */
+
+table tr {
+	height: '50px !important';
+}
+
+table td {
+	text-transform: capitalize;
+	font-size: 14px;
+	border: 1px solid #ddd;
+	padding: 0px 6px;
+	text-align: center;
+}
+
+table th {
+	border: 1px solid #ddd;
+	font-size: 15px;
+	padding: 15px 5px;
+	color: #322f2f;
+	text-align: center;
+	font-weight: 500;
+}
+
+/* React modal css here */
+#modalBackground {
+	display: flex;
+	align-items: center;
+	z-index: 10000;
+}
+
+/* .modalContainer {
+  border-radius: 12px;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  display: flex;
+  flex-direction: column;
+} */
+
+#modalContainer {
+	width: 95vw;
+}
+
+#modalContainer .title {
+	display: inline-block;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.titleCloseBtn {
+	padding: 10px 15px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-bottom: 1px solid #ddd;
+}
+
+#create_user_page_wrapper {
+	width: 100%;
+	height: 67vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.image_wrapper {
+	padding: 20px;
+}
+
+svg {
+	margin: 0 2px;
+}
+
+.pagination {
+	margin: 20px 0px;
+}
+
+ul {
+	display: flex;
+	justify-content: center;
+	padding: 10px;
+	align-items: center;
+	margin: auto;
+	width: 310px;
+	color: white;
+	border-radius: 2px;
+}
+
+li.previous,
+li.next {
+	background: white;
+	border: 1px solid #eee;
+}
+
+li.previous:hover {
+	background: linear-gradient(#ff934b, #ff5e62);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+li.next:hover {
+	background: linear-gradient(#ff934b, #ff5e62);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+li.selected {
+	padding: 4px 12px;
+	border-radius: 100%;
+	color: #fff;
+	text-align: center;
+	font-weight: 500;
+	margin: 0px 5px;
+	background: linear-gradient(#ff934b, #ff5e62);
+}
+
+li:hover {
+	background: linear-gradient(#ff934b, #ff5e62);
+	transition: 0.3s;
+	cursor: pointer;
+}
+
+li {
+	padding: 4px 12px;
+	border-radius: 100%;
+	color: black;
+	text-align: center;
+	font-weight: 500;
+	margin: 0px 5px;
+}
+
+.action_three-dots {
+	position: relative;
+}
+
+#action_plate_two {
+	width: 8rem;
+	height: 5rem;
+	display: grid !important;
+	grid-gap: 5px;
+	margin: 5px;
+	position: absolute;
+	top: -10px;
+	bottom: 0;
+	left: -115px;
+	right: 0;
+	border-radius: 5px;
+	z-index: 9999999999;
+	opacity: 1;
+	background-color: #fff;
+	padding: 8px;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	transition-duration: 1000ms;
+	box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+		0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+#action_plate_three {
+	width: 8rem;
+	height: 7.2rem;
+	display: grid !important;
+	grid-gap: 5px;
+	margin: 5px;
+	position: absolute;
+	top: -10px;
+	bottom: 0;
+	left: -115px;
+	right: 0;
+	border-radius: 5px;
+	z-index: 9999999999;
+	opacity: 1;
+	background-color: #fff;
+	padding: 8px;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	transition-duration: 1000ms;
+	box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+		0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+#action_plate_three_admin {
+	width: 9rem;
+	height: 7.2rem;
+	display: grid !important;
+	grid-gap: 5px;
+	margin: 5px;
+	position: absolute;
+	top: -3px;
+	bottom: 0;
+	left: -122px;
+	right: 0;
+	border-radius: 5px;
+	z-index: 9999999999;
+	opacity: 1;
+	background-color: #fff;
+	padding: 8px;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	transition-duration: 1000ms;
+	box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+		0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+#profile_action_menus {
+	width: 10rem;
+	height: 10rem;
+	display: grid;
+	grid-gap: 5px;
+	margin: 5px;
+	position: absolute;
+	top: -3px;
+	bottom: 0;
+	left: -137px;
+	right: 0px;
+	border-radius: 5px;
+	z-index: 9999999999;
+	opacity: 1;
+	background-color: #fff;
+	padding: 8px;
+	font-size: 0.875rem;
+	line-height: 1.25rem;
+	transition-duration: 1000ms;
+	box-shadow: 0px 5px 5px -3px rgb(0 0 0 / 20%),
+		0px 8px 10px 1px rgb(0 0 0 / 14%), 0px 3px 14px 2px rgb(0 0 0 / 12%);
+}
+
+.gelpCx {
+	overflow-y: initial !important;
+	overflow-x: auto;
+}
+
+button#action_btn_icon {
+	text-transform: capitalize;
+	display: flex;
+	padding: 5px 8px;
+	border-radius: 99999px;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+button#action_btn_icon:hover {
+	background: #eee;
+	transition: 0.3s;
+}
+
+/* browser bar css */
+.gelpCx::-webkit-scrollbar {
+	width: 0.2rem !important;
+}
+
+.gelpCx::-webkit-scrollbar:horizontal {
+	width: 0.2rem !important;
+	height: 0.2rem !important;
+}
+
+.gelpCx::-webkit-scrollbar-track {
+	background: transparent !important;
+}
+
+.gelpCx::-webkit-scrollbar-thumb {
+	background: rgb(108, 95, 252) !important;
+	border-radius: 5rem !important;
+}
+
+html::-webkit-scrollbar {
+	width: 0.5rem !important;
+}
+
+html::-webkit-scrollbar-track {
+	background: transparent !important;
+}
+
+.sc-dmRaPn.gelpCx {
+	border: 1px solid #9790903b !important;
+}
+
+.bMgaAx div:first-child {
+	overflow: initial !important;
+	white-space: initial !important;
+	display: block !important;
+}
+
+.dBbhDz div:first-child {
+	overflow: initial !important;
+}
+
+.StepperContainer-0-2-1 {
+	display: flex !important;
+	padding: 24px 0px !important;
+	align-items: center !important;
+	font-family: 'Poppins' !important;
+	flex-direction: row !important;
+}
