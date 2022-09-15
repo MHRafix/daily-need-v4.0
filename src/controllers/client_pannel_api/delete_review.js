@@ -2,8 +2,8 @@
  * delete review controller
  */
 
-import db from '../../../models/db';
 import Reviews from '../../../models/Reviews';
+import db from '../../utilities/database';
 
 export const deleteReview = async (req, res) => {
 	const { review_id } = req.query;
