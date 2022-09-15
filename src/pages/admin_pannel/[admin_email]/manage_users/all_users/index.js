@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import AdminPannelLayoutContainer from '../../../../../components/admin_pannel_components/common/layout/AdminPannelLayoutContainer';
 import ManageAllUsersMain from '../../../../../components/admin_pannel_components/components/manage_users/ManageAllUsersMain';
+import { fetcher } from '../../../../../hooks/http_req/DataFetch';
 import ErrorPage from '../../../../../pages/404';
 import { storeUserData } from '../../../../../redux/user_data/action';
 
