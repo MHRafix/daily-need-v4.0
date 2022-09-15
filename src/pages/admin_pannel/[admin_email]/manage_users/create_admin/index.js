@@ -100,7 +100,7 @@ export async function getStaticPaths() {
 // return the data here
 export async function getStaticProps({ params }) {
 	const { admin_email } = params;
-	const this_user = await fetch(
+	const this_user = await fetcher(
 		`admin_pannel_api/manage_users/single_user/${admin_email}`
 	);
 
