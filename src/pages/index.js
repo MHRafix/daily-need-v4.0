@@ -28,7 +28,7 @@ export default function Home({
 export async function getStaticProps() {
 	const all_products = await fetcher('client_pannel_api/all_products');
 	const all_categories = await fetcher('client_pannel_api/all_categories');
-	const all_sliders = await fetcher('client_pannel_api/all_sliders');
+	const all_sliders = [];
 	const all_brands = await fetcher('client_pannel_api/all_brands');
 
 	return {
