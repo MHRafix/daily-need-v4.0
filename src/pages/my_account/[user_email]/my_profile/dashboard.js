@@ -34,7 +34,7 @@ export default function Dashboard({ my_orders, loggedin_user }) {
 				title='My Profile'
 				description="This is my profile page of 'Daily Needs Grocery' application!"
 			>
-				<MyProfileMain my_orders={my_orders} />
+				<MyProfileMain my_orders={my_orders.length ? my_orders : []} />
 			</LayoutContainer>
 		</>
 	);

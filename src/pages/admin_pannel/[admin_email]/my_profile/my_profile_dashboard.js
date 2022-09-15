@@ -34,13 +34,7 @@ export default function MyProfileDashboard({
 			<AdminPannelLayoutContainer
 				title='Admin Profile Dashboard'
 				description="This is admin profile dashboard of 'Daily Needs Grocery' web application."
-			>
-				{/* <AdminDashboardMain
-					all_orders={all_orders}
-					all_users={all_users}
-					all_products={all_products}
-				/> */}
-			</AdminPannelLayoutContainer>
+			></AdminPannelLayoutContainer>
 		</>
 	);
 }
@@ -63,19 +57,8 @@ export async function getStaticProps({ params }) {
 		`admin_pannel_api/manage_users/single_user/${admin_email}`
 	);
 
-	// all orders
-	const all_orders = await fetcher(
-		'client_pannel_api/manage_orders/all_orders'
-	);
-
-	// all products
-	const all_products = await fetcher('client_pannel_api/all_products');
-
-	// all users
-	const all_users = await fetch('admin_pannel_api/manage_users/all_users');
-
 	return {
-		props: { all_orders, all_products, all_users, this_user },
+		props: { this_user },
 		revalidate: 30,
 	};
 }
