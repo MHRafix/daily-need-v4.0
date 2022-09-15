@@ -87,7 +87,7 @@ export default function CreateAdmin({ this_user }) {
 
 // find the right user here
 export async function getStaticPaths() {
-	const all_users = await fetcher('admin_pannel_api/all_users');
+	const all_users = await fetcher('admin_pannel_api/manage_users/all_users');
 	const user = all_users.map((user) => ({
 		params: { admin_email: user.user_email },
 	}));
