@@ -36,7 +36,7 @@ export default function MyAllOrders({ my_orders, loggedin_user }) {
 				title='Manage orders'
 				description="This is my all orders page of 'Daily Needs Grocery' web application."
 			>
-				<MyAllOrdersMain my_orders={my_orders.length ? my_orders : []} />
+				<MyAllOrdersMain my_orders={my_orders?.length ? my_orders : []} />
 			</LayoutContainer>
 		</>
 	);
@@ -50,7 +50,7 @@ export async function getStaticPaths() {
 	}));
 	return {
 		paths: user,
-		fallback: false,
+		fallback: 'blocking',
 	};
 }
 
