@@ -522,7 +522,7 @@ export const AddProductsFormValidator = () => {
 				setToastText,
 				setToastType,
 				setToastOn,
-				'add_products'
+				'/admin_pannel_api/manage_products/add_products'
 			);
 		}
 	};
