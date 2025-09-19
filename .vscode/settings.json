@@ -10,6 +10,6 @@
 		"editor.formatOnSave": false,
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
 	},
-	"editor.minimap.autohide": true,
+	"editor.minimap.autohide": "mouseover",
 	"editor.minimap.renderCharacters": false
 }

@@ -3,9 +3,7 @@ import Head from 'next/head';
 import { IoIosArrowUp } from 'react-icons/io';
 import ScrollToTop from 'react-scroll-to-top';
 import FooterCopyrightArea from '../Footer/FooterCopyrightArea';
-import FooterFeaturesCard from '../Footer/FooterFeaturesCard';
-import FooterMain from '../Footer/FooterMain';
-import HeaderMain from '../Header/HeaderMain';
+import Header from '../Header/Header';
 
 export default function LayoutContainer({ children, title, description }) {
 	return (
@@ -22,17 +20,11 @@ export default function LayoutContainer({ children, title, description }) {
 			</Head>
 			{/* app header is here */}
 			<header>
-				<HeaderMain />
+				<Header />
 			</header>
 			{/* app body is here */}
 			<main>
 				<div className='container_wrapper'>{children}</div>
-
-				{/* messenger chat icon here */}
-				{/* <MessengerCustomerChat
-          pageId="110944118380097"
-          appId="588889365150764"
-        /> */}
 
 				{/* scroll to top btn */}
 				<div>
@@ -48,8 +40,6 @@ export default function LayoutContainer({ children, title, description }) {
 
 			{/* app footer is here */}
 			<footer className='bg-slate-100 mt-20'>
-				<FooterFeaturesCard />
-				<FooterMain />
 				<FooterCopyrightArea />
 			</footer>
 		</motion.div>

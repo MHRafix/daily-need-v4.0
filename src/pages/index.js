@@ -14,12 +14,7 @@ export default function Home({
 				title='Organic Food and Grocery'
 				description="This is home page of 'Daily Needs Grocery'"
 			>
-				<HomeMain
-					all_products={all_products}
-					all_categories={all_categories}
-					all_sliders={all_sliders}
-					all_brands={all_brands}
-				/>
+				<HomeMain />
 			</LayoutContainer>
 		</>
 	);
